@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="image/Favicon.png" type="image/png">
+    <title>Scrum新手村</title>
+</head>
+<body>
+    <div class="container">
+        <section class="chat">
+            <div class="d-flex d-flex-top">
+                <img src="image/Allen.png" alt="Allen" class="chatPeople">
+                <div class="chatbox chatbox-first">
+                    <p>哇賽新來的，你真的很幸運，今天剛好是開發B組的 Retro，你也見識一下，看看Retro都該做些什麼吧~我們會在會議裡請團隊成員提出哪些是做得好的地方、哪些可以繼續改善的地方？並記錄再Confluence中。</p>
+                </div>
+            </div>
+            <div class="chatbox d-flex d-flex-center" style="margin-bottom:35px;">
+                <p>請選擇適合 Retro的回饋卡！思考看看哪一張牌是『正面表述』呢？</p>
+            </div>          
+        </section>
+        <section class="card-section d-flex d-flex-jcc">
+            <div class="card-section-container">
+                <p>做得好的地方</p>
+                <div id="radioCard" class="radioCard d-flex d-flex-jcc">
+                    <label>
+                        <input type="radio" name="labelCard" value="false">
+                        <div class="pokerCard">
+                            <div class="pokerCard-num-top pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                            <p class="pokerCard-inner">這次我幫了很多人救火耶</p>
+                            <div class="pokerCard-num-bottom pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="labelCard" value="true">
+                        <div class="pokerCard">
+                            <div class="pokerCard-num-top pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                            <p class="pokerCard-inner">
+                                大家在開發上都會互相 cover，讓任務都有準時在時間內完成。
+                            </p>
+                            <div class="pokerCard-num-bottom pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="card-section-container">
+                <p >有哪些可以做得更好？</p>
+                <div id="radioCard1" class="radioCard d-flex d-flex-jcc">
+                    <label>
+                        <input type="radio" name="labelCard1" value="true">
+                        <div class="pokerCard">
+                            <div class="pokerCard-num-top pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                            <p class="pokerCard-inner">
+                                可以記錄這次的開發時間，讓預估團隊點數可以更精準。
+                            </p>
+                            <div class="pokerCard-num-bottom pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="labelCard1" value="false">
+                        <div class="pokerCard">
+                            <div class="pokerCard-num-top pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                            <p class="pokerCard-inner">
+                                開發時間預估不準確，請後端下次改進，避免Delay到我。
+                            </p>
+                            <div class="pokerCard-num-bottom pokerCard-num">
+                                <p>A</p>
+                                <img src="image/peach.png" alt="">
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <div class="d-flex d-flex-row-reverse">
+            <button class="btn btn-lg btn-black submit">我想我了解了</button>
+        </div>
+        <!-- 錯誤訊息 -->
+        <div class="msg display-none">
+            <div class="toggleOverlay"></div>
+            <div class="toggle">
+                <p class="msg-text"></p>
+                <button class="togglebtn">確定</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/feedback.js"></script>
+</body>
+</html>

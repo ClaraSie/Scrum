@@ -1,0 +1,23 @@
+$white: #FFFFFF;
+$black: #000000; 
+$red:  #9C0700;
+
+//background colors
+$background: radial-gradient(50% 50% at 50% 50%, #497333 0%, #1A451D 100%);
+
+//font
+$font-base: 16px;
+$font-1: $font-base * 0.875; //14px
+$font-2: $font-base * 1.25; //20px
+$font-3: $font-base * 1.5; //24px
+$font-4: $font-base * 1.75; //28px
+$font-5: $font-base * 1.875; //30px
+$font-6: $font-base * 2.25; //36px
+$font-7: $font-base * 3.125; //50xp
+
+//lineHeight
+$lh-base: $font-base * 1.5; //24px
+$lh-1: $lh-base * 1.25; //30px
+$lh-2: $font-base * 2; //32px
+$lh-3: $font-base * 2.5; //40px
+$lh-4: $font-base * 3.5; //56px

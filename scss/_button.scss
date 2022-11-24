@@ -1,0 +1,26 @@
+.btn{
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    cursor: pointer;
+    &-black{
+        color: $white;
+        background: $black;
+        @include fzlh($font-4, $lh-1);
+        &:hover{
+            background: $red;
+        }
+    }
+    &-lg{
+        width: 280px;
+        height: 88px;
+    }
+    &-md{
+        width: 183px;
+        height: 88px;
+    }
+    &-move{
+        cursor: move;
+    }
+}

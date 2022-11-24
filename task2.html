@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.itxst.com/package/sortable/sortable.min.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="image/Favicon.png" type="image/png">
+    <title>Scrum新手村</title>
+</head>
+<body>
+    <div class="container">
+        <section class="task2">
+            <section class="d-flex d-flex-center backlog-section" style="margin-bottom: 16px;">
+                <p class="mr-20">產品待辦清單</p>
+                <div class="droppable-container pokerCard-container d-flex d-flex-center" style="border: 0;"></div>
+            </section>
+            <section class="d-flex d-flex-bottom sprint-section">
+                <div class="d-flex d-flex-center position-r">
+                    <p class="mr-20 mb-49">開發 A 組<br>短衝待辦清單</p>
+                    <div class="position-r">
+                        <div class="position-a" style="z-index:-1;">
+                            <div class="pokerCard-container d-flex d-flex-center">
+                                <div class="pokerCard pokerCard-empty"></div>
+                                <div class="pokerCard pokerCard-empty"></div>
+                                <div class="pokerCard pokerCard-empty"></div>
+                                <div class="pokerCard pokerCard-empty"></div>
+                            </div>
+                        </div>  
+                        <div>
+                            <div class="droppable-container pokerCard-container d-flex d-flex-center mr-20"></div>
+                            <p class="describe">請把需求拖移到方框中(加總後不得超過20點)</p>
+                        </div>   
+                    </div>
+                    <img src="image/coins2.png" alt="" class="img-coins2">
+                </div>
+                <div class="mb-49">
+                    <p class="scoreboard font-roboto"><span class="total-score">0</span>/20</p>
+                    <button class="btn btn-md btn-black submit">準備好了！<br>開始 Sprint</button>
+                </div>
+            </section>
+        </section>
+        <!-- 錯誤訊息 -->
+        <div class="msg display-none">
+            <div class="toggleOverlay"></div>
+            <div class="toggle">
+                <p class="msg-text">超過20點，請再調整清單</p>
+                <button class="togglebtn">確定</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/task2.js"></script>
+</body>
+</html>

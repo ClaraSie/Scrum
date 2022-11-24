@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://www.itxst.com/package/sortable/sortable.min.js"></script>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="image/Favicon.png" type="image/png">
+    <title>Scrum新手村</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex d-flex-top">
+            <img src="image/Jason.png" alt="Jason" class="chatPeople">
+            <div class="chatbox chatbox-first">
+                <p>那你來試試看，在這經典的Surum流程圖中，這些流程分別代表哪一個會議呢？</p>
+            </div>
+        </div>
+        <div class="chatbox d-flex d-flex-center" style="margin-bottom:37px;">
+            <p class="mark">提示：請用拖移的方式將標籤拖移至對應的方框裡</p>
+        </div>
+        <div class="task3 position-r">
+            <img src="image/Vector.png" alt="">
+            <p class="img-text font-roboto">Sprint</p>
+            <div class="task3-item-red process-red process-bg-md">每日站立會議(Daily Scrum)</div>
+            <div class="task3-backlog d-flex">
+                <div class="process-orange process-bg-md d-flex d-flex-jcc btn-move" draggable="true" data-id="1">
+                    短衝檢視會議(Sprint Review)
+                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                </div>
+                <div class="process-green process-bg-md d-flex d-flex-jcc btn-move" draggable="true" data-id="2">
+                    短衝自省會議(Sprint Retrospective)
+                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                </div>
+            </div>
+            <div class="postion-r">
+                <div class="task3-sprint d-flex position-a" style="z-index:-1;">
+                    <div class="process-orange-outer process-bg-md"></div>
+                    <div class="process-green-outer process-bg-md"></div>
+                </div>
+                <div class="task3-sprint sprint d-flex"></div>
+            </div>
+            <div class="task3-btn d-flex d-flex-row-reverse">
+                <button class="btn btn-md btn-black submit">完成</button>
+            </div>
+        </div>
+
+        <!-- 錯誤訊息 -->
+        <div class="msg display-none">
+            <div class="toggleOverlay"></div>
+            <div class="toggle">
+                <p class="msg-text"></p>
+                <button class="togglebtn">確定</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/task3.js"></script>
+</body>
+</html>

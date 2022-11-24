@@ -1,0 +1,332 @@
+.wrap{
+    &-bg{
+        position: absolute;
+        &-left{
+            left: 0;
+            bottom: 0;
+        }
+        &-right{
+            right: 0;
+            top: 0;
+        }
+        &-coin1{
+            left: 47px;
+            bottom: 344px;
+        }
+        &-coin2{
+            left: 599px;
+            top: 47px;
+        }
+        &-coin3{
+            left: 640px;
+            bottom: 21px;
+            transform: rotate(130deg);
+        }
+        &-dice{
+            right: 81px;
+            top: 317px;
+        }
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    &-content{
+        padding-top: 153px;
+        margin-bottom: 153px;
+        color: $white;
+        @include fzlh($font-4, $lh-4);
+    }
+    &-btn{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 44px;
+    }
+    // finish page
+    &-finish{
+        &-content{
+            padding-top: 256px;
+            padding-bottom: 258px;
+            text-align: center;
+            color: $white;
+            @include fzlh(34px, 68px);
+        }
+        // 圖片絕對定位
+        &-bg{
+            position: absolute;
+            &-coin1{
+                left: 59px;
+                top: 285px;
+                width: 83px;
+                transform: rotate(230deg);
+            }
+            &-coin2{
+                left: 403px;
+                top: 60px;
+                width: 46px;
+                transform: rotate(245deg);
+            }
+            &-coin3{
+                top: 113px;
+                left: 640px;
+                width: 60px;
+                transform: rotate(180deg);
+            }
+            &-coin4{
+                top: 600px;
+                left: 717px;
+                width: 93px;
+            }
+            &-coin5{
+                top: 348px;
+                right: 81px;
+                width: 56px;
+                transform: rotate(180deg);
+            }
+            &-coin6{
+                right: 313px;
+                bottom: 17px;
+                z-index: 2;
+            }
+        }
+    }
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 18.5px 0;
+    background: $white;
+    z-index: 1;
+    .jira{
+        height: 33px;
+        margin-right: 36px;
+    }
+}
+
+// chatbox
+.chatPeople{
+    margin-right: 9.5px;
+}
+.chatbox{
+    margin-left: 94.5px;
+    margin-bottom: 25px;
+    padding: 16px 24px;
+    color: $black;
+    background: $white;
+    border-radius: 16px;
+    @include fzlh($font-base, $lh-3);
+
+    &-first{
+        position: relative;
+        margin-left: 20px;
+        width: 100%;
+
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 17px;
+            left: -20px;
+            border-width: 15px 20px 15px 0;
+            border-style: solid;
+            border-color: transparent $white transparent transparent;
+        }
+    }
+    .mark{
+        color: $red;
+        font-weight: 500;
+    }
+    .jira{
+        margin: 28.5px 0;
+    }
+}
+
+// task1
+.task1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    margin-top: 175px;
+    &-outter{
+        width: 516px;
+        height: 52px;
+        border: 5px solid $white;
+        text-align: center;
+        @include fzlh($font-2, 42px);
+        &.top{
+            background: $red;
+            border-radius: 16px 16px 0px 0px;
+            border-bottom: 0px;
+            span{
+                font-weight: 700;
+                font-size: $font-3;
+            }
+        }
+        &.bottom{
+            background: $black;
+            border-radius: 0px 0px 16px 16px;
+            border-top: 0px;
+            padding: 0 24px;
+        }
+    }
+    &-container{
+        position: relative;
+        &::before{
+            content: "產品待辦清單";
+            position: absolute;
+            top: 50%;
+            left: -193px;
+            @include fzlh($font-5, $lh-1);
+        }
+        .img-coins{
+            position: absolute;
+            right: -137px;
+            top: -155px;
+        }
+        .img-dice{
+            position: absolute;
+            left: -166px;
+            bottom: -131px;
+        }
+    }
+}
+
+
+// task2
+.task2{
+    padding-top: 16px;
+    color: $white;
+    @include fzlh($font-5, 45px);
+    .img-coins2{
+        position: absolute;
+        transform: rotatey(180deg);
+        top: -177px;
+        right: -168px;
+        width: 269px;
+        height: 277px;
+    }
+    .describe{
+        margin-top: 7px;
+        text-align: center;
+        @include fzlh($font-2, 42px);
+    }
+    .scoreboard{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 15px;        
+    }
+    .warning-text{
+        color: $red;
+    }
+    .btn-md{
+        font-size: $font-3;
+    }
+}
+
+//process
+.process{
+    padding-left: 94.5px;
+    color:$white;
+    @include fzlh($font-base, $lh-2);
+    
+    &-red{
+        background: $red;
+        color:$white;
+    }
+    &-orange{
+        background: #FF7E06;
+        color:$white;
+        &-outer{
+            border: 3px dashed #FF7E06;
+            border-radius: 8px;
+        }
+    }
+    &-green{
+        background: #009A50;
+        color:$white;
+        &-outer{
+            border: 3px dashed #009A50;
+            border-radius: 8px;
+        }
+    }
+    &-bg-big{
+        text-align: center;
+        padding: 22px 0;
+        border-radius: 8px;
+    }
+    &-bg-md{
+        text-align: center;
+        padding: 22px 0;
+        width: 309px;
+        border-radius: 8px;
+    }
+    &-item{
+        width: 32%;
+    }
+    &-content{
+        padding-top: 15px;
+        margin-bottom: 44px;
+        @include fzlh($font-1, $lh-base);
+    }
+}
+
+// task3 sprint
+.task3{
+    .img-text{
+        position: absolute;
+        top: 240px;
+        left: 145px;
+        color: $white;
+        font-size: $font-7;
+    }
+    i{
+        font-size: 26px;
+    }
+    &-item-red{
+        position: absolute;
+        top: 44px;
+        left: 97px;
+    }
+    &-backlog{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 642px;
+        min-height: 70px;
+        div:first-child{
+            margin-right: 24px;
+        }
+    }
+    &-sprint{
+        position: absolute;
+        left: 348px;
+        top: 269px;
+        width: 642px;
+        min-height: 70px;
+        div:first-child{
+            margin-right: 24px;
+        }
+    }
+    &-btn{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+// feedback radioCard
+.card-section{
+    &-container{
+        width: 40%;
+        color: $white;
+        font-size: $font-5;
+        text-align: center;        
+    }
+    // radioCard pokerCard額外設定
+    .radioCard .pokerCard{
+        margin: 30px 17.5px;
+    }
+}
